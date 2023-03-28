@@ -23,6 +23,7 @@ import ComponentB from './components_reducer_context/ComponentB';
 import ComponentC from './components_reducer_context/ComponentC';
 import DataFetchingOne from './components/DataFetchingOne';
 import DataFetchingTwo from './components/DataFetchingTwo';
+import ParentComponent from './components/ParentComponent';
 
 
 
@@ -82,7 +83,8 @@ function App() {
         </div>
       </CountContext.Provider> */}
       {/* <DataFetchingOne /> */}
-      <DataFetchingTwo />
+      {/* <DataFetchingTwo /> */}
+      <ParentComponent />
     </div>
   );
 }
