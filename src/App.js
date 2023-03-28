@@ -21,6 +21,9 @@ import CounterThree from './components/CounterThree';
 import ComponentA from './components_reducer_context/ComponentA';
 import ComponentB from './components_reducer_context/ComponentB';
 import ComponentC from './components_reducer_context/ComponentC';
+import DataFetchingOne from './components/DataFetchingOne';
+import DataFetchingTwo from './components/DataFetchingTwo';
+
 
 
 export const UserContext = React.createContext()
@@ -70,14 +73,16 @@ function App() {
       {/* <CounterTwo />  */}
       {/* <CounterThree />   */}
 
-      <CountContext.Provider value={ { countState: count , countDispatch : dispatch } }>
+      {/* <CountContext.Provider value={ { countState: count , countDispatch : dispatch } }>
         <div>
           Count - { count }
           <ComponentA />
           <ComponentB />
           <ComponentC />
         </div>
-      </CountContext.Provider>
+      </CountContext.Provider> */}
+      {/* <DataFetchingOne /> */}
+      <DataFetchingTwo />
     </div>
   );
 }
