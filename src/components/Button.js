@@ -2,10 +2,22 @@
 
 import React from 'react'
 
-function Button() {
+//Fast wat destruction props data
+function Button({ handleClick , children }) {
+  
+  // second way destruction props data
+
+  // function Button(props) {
+  // console.log(props)
+  // const { handleClick , children } = props;
+  // console.log(handleClick)
+  // console.log(children)
+
+  console.log(`Rendering button - ` , children)
+  
   return (
-    <div>Button</div>
+    <button onClick={handleClick}>{children}</button>
   )
 }
 
-export default Button
+export default React.memo(Button)

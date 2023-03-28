@@ -1,10 +1,11 @@
 /* Tutorial - 26 - useCallback Hook */ 
 import React from 'react'
 
-function Count() {
+function Count({text,count}) {
+  console.log(`Rendering ${text}`)
   return (
-    <div>Count</div>
+    <div>{text} - {count}</div>
   )
 }
 
-export default Count
+export default  React.memo(Count)
