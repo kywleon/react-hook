@@ -24,7 +24,7 @@ import ComponentC from './components_reducer_context/ComponentC';
 import DataFetchingOne from './components/DataFetchingOne';
 import DataFetchingTwo from './components/DataFetchingTwo';
 import ParentComponent from './components/ParentComponent';
-
+import Counter from './components/Counter';
 
 
 export const UserContext = React.createContext()
@@ -84,7 +84,8 @@ function App() {
       </CountContext.Provider> */}
       {/* <DataFetchingOne /> */}
       {/* <DataFetchingTwo /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      <Counter/>
     </div>
   );
 }
