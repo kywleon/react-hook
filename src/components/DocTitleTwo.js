@@ -1,16 +1,14 @@
 /* Tutorial - 31 - useDocumentTitle Custom Hook */ 
 
-import React , { useState  } from 'react'
+import React , { useState , useEffect } from 'react'
 import useDocumentTitle from '../hooks/useDocumentTitle';
 
-function DocTitleOne() {
+function DocTitleTwo() {
 
     const [count, setCount] = useState(0);
 
-    // way to use custom Hooks 
     useDocumentTitle(count)
     
-    // normal way 
     // useEffect(() => {
     //     document.title = `Count -  ${count}`
     // }, [count])
@@ -22,4 +20,4 @@ function DocTitleOne() {
   )
 }
 
-export default DocTitleOne
+export default DocTitleTwo

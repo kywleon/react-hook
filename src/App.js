@@ -15,8 +15,8 @@ import IntervalClassCounter from './components/IntervalClassCounter';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFetching from './components/DataFetching';
 // import ComponentC from './components/ComponentC';
-import CounterOne from './components/CounterOne';
-import CounterTwo from './components/CounterTwo';
+// import CounterOne from './components/CounterOne';
+// import CounterTwo from './components/CounterTwo';
 import CounterThree from './components/CounterThree';
 import ComponentA from './components_reducer_context/ComponentA';
 import ComponentB from './components_reducer_context/ComponentB';
@@ -29,6 +29,10 @@ import FocusInput from './components/FocusInput';
 import ClassTimer from './components/ClassTimer';
 import HookTimer from './components/HookTimer';
 import DocTitleOne from './components/DocTitleOne';
+import DocTitleTwo from './components/DocTitleTwo';
+
+import CounterOne from './components_reducer_context/CounterOne';
+import CounterTwo from './components_reducer_context/CounterTwo';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -92,7 +96,10 @@ function App() {
       {/* <FocusInput /> */}
       {/* <ClassTimer />
       <HookTimer /> */}
-      <DocTitleOne />
+      {/* <DocTitleOne />
+      <DocTitleTwo /> */}
+      <CounterOne />
+      <CounterTwo />
     </div>
   );
 }
