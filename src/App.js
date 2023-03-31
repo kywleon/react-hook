@@ -33,6 +33,8 @@ import DocTitleTwo from './components/DocTitleTwo';
 
 import CounterOne from './components_reducer_context/CounterOne';
 import CounterTwo from './components_reducer_context/CounterTwo';
+import UserForm from './components/UserForm';
+
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -98,8 +100,9 @@ function App() {
       <HookTimer /> */}
       {/* <DocTitleOne />
       <DocTitleTwo /> */}
-      <CounterOne />
-      <CounterTwo />
+      {/* <CounterOne />
+      <CounterTwo /> */}
+      <UserForm />
     </div>
   );
 }
